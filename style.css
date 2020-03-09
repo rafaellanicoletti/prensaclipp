@@ -1,4 +1,24 @@
+.navbar{
+    height: 200px;
+}
+
+.containerGray{
+    background-color:gray;
+}
+
+footer{
+    background-color: navy;
+    margin-top: 20px;
+}
 #Carousel2{
 height: 30px;
 width: 10px;
+}
+
+
+.clientes{
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    padding: 5%;
 }
