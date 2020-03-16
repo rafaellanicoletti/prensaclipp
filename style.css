@@ -1,6 +1,19 @@
 .navbar{
     height: 200px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
+
+#menu {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+
+/* .button{
+    background-color: black;
+    color: white;
+} */
 
 .containerGray{
     background-color: #F2F2F2;
