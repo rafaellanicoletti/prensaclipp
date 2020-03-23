@@ -1,6 +1,10 @@
+body{
+    background-color: #F2F2F2;
+}
 .navbar{
     height: 200px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     
 }
 
@@ -10,10 +14,24 @@
     right: 50px;
 }
 
-/* .button{
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    
+}
+
+.btn{
+    font-family: 'Raleway', sans-serif;
     background-color: black;
     color: white;
-} */
+    border-radius: 0;
+}
+
 
 .containerGray{
     background-color: #F2F2F2;
