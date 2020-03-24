@@ -2,7 +2,7 @@ body{
     background-color: #F2F2F2;
 }
 .navbar{
-    height: 200px;
+    height: 248px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     
@@ -53,3 +53,12 @@ width: 10px;
     margin-left: 100px;
     padding: 5%;
 }
+
+/* Quienes somos html */
+
+.container{
+    padding-top: 50px;
+}
+
+/* Servicios html */
+
