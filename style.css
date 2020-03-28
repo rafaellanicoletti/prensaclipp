@@ -61,4 +61,18 @@ width: 10px;
 }
 
 /* Servicios html */
+.servicioCont {
+    font-family: 'Raleway', 'sans-serif';
+}
+
+dt{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+dd{
+    font-size: 17px;
+    justify-content: center;
+}
+
 
