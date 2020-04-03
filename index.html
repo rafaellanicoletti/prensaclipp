@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
 
 
 </head>
@@ -35,8 +37,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- <a class="navbar-brand" href="#">PRENSACLIPP</a> -->
+        <a href='index.html'>
         <img src="logo 2 .png" alt="prensaclipp" height="200px">
-        
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,11 +106,13 @@
     <br>
     <br>
 
+
     <div class="containerGray">
     <!-- Servicio container -->
-        <div class="container">
+        <div class="container" id='containerServicios'>
             <div class="row">
-                <div class="col">
+                <div class="col columni">
+                    
                 <h1>S E R V I C I O S</h1>
                 <br>
                 <h2>Asesoría Comunicacional</h2>
@@ -115,18 +120,21 @@
                 <h2>Reportes de Prensa</h2>
                 <br>
                 <br>
-                <button type="button" class="btn btn-dark .active" data-toggle="button" aria-pressed="false">
-                    Más Información
-                </button>
+                <a class="btn btn-primary btn-dark .active" href="servicios.html" role="button">Más Información</a>
                 </div>
-                <div class="col">
-                    <img src="cafe.jpg" class="image" alt="cafe" height="762px" width="594px">
+
+                
+                <div class="col columni">
+                    <div id="aff" class="moving-div">
+                        <img src="cafe.jpg" class="image" alt="cafe" height="762px" width="594px">
+                    </div>
                 </div>
             </div>
         </div>
+        
 
 
-    
+
     <!-- Clientes container-->
     <div class="container">
         <div class="row">
@@ -213,7 +221,10 @@
             <BR>
 
           <h1>C O N Ó C E N O S</h1>
+        <a href='quienessomos.html'>
           <img src="right arrow.webp" alt="right arrow" height="40px" width="40px">
+        </a>
+
         </div>
         <div class="col">
             <img src="Hora punta de la mañana.webp" alt="prensaclipp" height="800px" width="600px">
@@ -227,5 +238,6 @@
     
 </footer>
 </body>
+<script type="text/javascript" src="app.js"></script>
 
 </html>
