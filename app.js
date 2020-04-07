@@ -1,5 +1,3 @@
-// document.getElementById("containerServicios").onscroll = function() {myFunction()};
-
 $(document).scroll(function () {
     windowScroll()
 });
@@ -13,7 +11,8 @@ function windowScroll() {
         $("#aff").css({ "left": 80 - st * 0.15 + "px" });
         $("#services").css({ "top": 40 + st * 0.05 + "px" });
         $("#services").css({ "left": 10 + st * 0.15 + "px" });
+        
     }
-
-
 };
+
+
