@@ -13,7 +13,6 @@ body{
 }
 
 
-
 .responsive{
     width: 80%;
     height: auto;
@@ -35,6 +34,19 @@ h2{
     font-size: 20px;
     
 }
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    
+}
+
+h4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  
+}
+
 
 p{
     font-family: 'Raleway', sans-serif;
@@ -474,5 +486,71 @@ dd{
     order: 1;                   /* text stays left */
     flex: 1;
     padding-right: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+/* Footer wrapper */
+.site-footer {
+  background-color: #083262;
+  color: #eee;
+  padding: 20px 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Inner container layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo sizing */
+.footer-logo img {
+  height: 120px;
+  max-width: 100%;
+}
+
+/* Contact info styling */
+.footer-contact {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.footer-contact a {
+  color: #eee;
+  text-decoration: none;
+}
+
+/* Mobile layout: stack logo and contact vertically */
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .footer-logo img {
+    height: 100px;
   }
 }
