@@ -2,10 +2,21 @@ body{
     background-color: #F2F2F2;
 }
 .navbar{
-    height: 248px;
+    height: auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    
+  
+}
+
+.carousel {
+  margin-top: 50px; /* Adjust as needed */
+}
+
+
+
+.responsive{
+    width: 80%;
+    height: auto;
 }
 
 #menu {
@@ -20,6 +31,12 @@ h1{
 }
 
 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    
+}
+
+p{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     
@@ -54,17 +71,85 @@ h2{
   /* cafe picture moves ends. */
 
 .containerGray{
-    background-color: #F2F2F2;
+    background-color: #ffffff;
 }
 
 footer{
     background-color: #083262;
     margin-top: 20px;
 }
-#Carousel2{
-height: 30px;
-width: 10px;
+
+.footer {
+    background-color: #083262;
+    color: #eee;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    height: 40px;
+    margin-right: 15px;
+  }
+
+  .footer-site-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .footer-right {
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    min-width: 200px;
+  }
+
+  .footer-right a {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  /* Responsive: stack vertically on narrow screens */
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-right {
+      text-align: left;
+      min-width: auto;
+    }
+  }
+
+
+
+  .btn-custom {
+    background-color: #083262 !important;
+    color: white !important;
+    border: none !important;
 }
+
+.btn-custom:hover {
+    background-color: #061f41 !important;
+    color: white !important;
+}
+
+
+
+#Carousel2{
+  height: 30px;
+  width: 10px;
+  }
 
 
 .clientes{
@@ -105,4 +190,109 @@ dd{
 .galeriaClientes{
     /* padding: 200px; */
 
+}
+
+
+
+
+
+
+
+/* Full width wrapper with background */
+.analytics-background {
+  width: 100vw;
+  background-color: #f5f8fa; /* light grayish blue */
+  padding: 40px 0; /* vertical padding */
+}
+
+/* Inner container with limited width */
+.analytics-module {
+  max-width: 1140px; /* same as bootstrap container max */
+  margin: 0 auto;
+  padding: 0 15px; /* container padding */
+}
+
+/* Cards style */
+.analytics-card {
+  background-color: #ffffff; /* white */
+  border-radius: 10px;
+  padding: 25px 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Text on cards */
+.analytics-card h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #083262; /* deep blue */
+}
+
+.analytics-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* CTA button style */
+.analytics-cta {
+  margin-top: 20px;
+  background-color: #083262;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.analytics-cta:hover {
+  background-color: #061f45; /* slightly darker on hover */
+  color: white;
+  text-decoration: none;
+}
+
+#clientsID .carousel-inner img {
+  max-height: 350px; /* adjust height as needed */
+  width: auto;
+  margin: 0 auto; /* center horizontally */
+  object-fit: contain; /* preserve aspect ratio */
+}
+
+/* Change carousel control icons color to #083262 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(26%) sepia(84%) saturate(2759%) hue-rotate(203deg) brightness(92%) contrast(96%);
+  /* This filter approximates #083262; or you can use SVG icons if you want exact color */
+}
+
+/* Or, if you want to use a custom blue arrow with SVG, you can do: */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23083262' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0L4.78.72 1.5 4l3.28 3.28L5.5 8l-4-4 4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23083262' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0L3.22.72 6.5 4 3.22 7.28 2.5 8l4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover; /* makes image cover area without stretching */
+  width: 100%;
+}
+
+#aff, #services {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 10%;
+  transform: translateY(-10%);
+  height: auto;
 }

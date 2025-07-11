@@ -31,77 +31,110 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="#">PRENSACLIPP</a> -->
-        <a href='index.html'>
-            <img src="logo 2 .png" alt="prensaclipp" height="200px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav" id="menu">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="clientes.html">Clientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li> -->
-            </ul>
-        </div>
-    </nav>
+   
+<!-- Navbar -->
+    
+<!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <!-- Logo -->
+  <a class="navbar-brand" href="index.html">
+    <img src="logo 2 .png" alt="Prensaclipp" class="img-fluid" style="max-height: 200px;">
+  </a>
+
+  <!-- Hamburger / Collapse Toggle -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Nav Links -->
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html">Servicios<span class="sr-only">(actual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="clientes.html">Clientes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:reportesfe@gmail.com">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!--endNAVBAR-->
+  
 
     <div class='container'>
     <h1>S E R V I C I O S</h1>
     </div>
     <div class="container servicioCont">
-        <dl>
-            <dt>-Reportes Personalizados</dt>
-            <dd>Reportes de noticias de las más variadas temáticas, Educación, Política, Inversiones, Investigación, Laboral,
-            Tecnología, Medioambiente, Salud,</dd>
+        <section aria-labelledby="reportes-heading">
+          <h3 id="reportes-heading">Servicios de Reportes y Asesorías</h3>
+          <dl>
+            <div class="service-item">
+              <dt><strong>Reportes Personalizados</strong></dt>
+              <dd>
+                Reportes de noticias en temáticas como educación, política, inversiones, investigación, laboral, tecnología, medioambiente y salud. 
+                <br>
+                <a href="Corporacion Cultural Las Condes.pdf" class="template-link" download>Ver ejemplo de reporte (PDF)</a>
+              </dd>
+            </div>
             <br>
-            <dt>-Reportes Institucionales Históricos Retroactivos</dt>
-            <dd>Reportes Institucionales históricos, Consolidados retroactivos de apariciones en prensa, de gran utilidad para presentar
-            al directorio de la empresa en la presentación de la memoria corporativa, con el cual se visibiliza de forma efectiva la
-            gestión comunicacional realizada, ya sea en marketing, difusión, eventos, campañas.
-            Como tambien para centros de estudios e investigación.</dd>
+            <div class="service-item">
+              <dt><strong>Reportes Institucionales Históricos Retroactivos</strong></dt>
+              <dd>
+                Consolidados de apariciones en prensa útiles para memorias corporativas, presentaciones ante directorios, marketing, campañas o estudios. Ideal para centros de documentación y análisis institucional.
+              </dd>
+            </div>
             <br>
-            <dt>-Reportes Puntuales</dt>
-            <dd>Reportes Puntuales de noticias, seguimientos express de acuerdo a requerimientos específicos solicitados por temas
-            contingentes u otros.</dd>
+            <div class="service-item">
+              <dt><strong>Reportes Puntuales</strong></dt>
+              <dd>
+                Seguimientos express o informes noticiosos personalizados por temas contingentes o requerimientos específicos.
+              </dd>
+            </div>
             <br>
-            <dt>-Reportes Sectoriales</dt>
-            <dd>Laboral, Medioambiente, Educación, Economía., Inversiones. Minería.</dd>
+            <div class="service-item">
+              <dt><strong>Reportes Sectoriales</strong></dt>
+              <dd>
+                Enfocados en sectores específicos como laboral, medioambiente, educación, economía, inversiones y minería.
+              </dd>
+            </div>
             <br>
-            <dt>-Análisis cuantitativos de apariciones en prensa</dt>
+            <div class="service-item">
+              <dt><strong>Análisis Cuantitativo de Apariciones en Prensa</strong></dt>
+              <dd>
+                Estudios estadísticos de presencia en medios de comunicación, alcance, frecuencia y cobertura.
+              </dd>
+            </div>
             <br>
-            <dt>-Asesorías comunicacionales</dt>
-            <dd>Gestión de prensa, manejo de crisis, Asesoría comunicacional estratégica,
-            contingencias mediáticas.</dd>
-        </dl>
-    </div>
+            <div class="service-item">
+              <dt><strong>Asesorías Comunicacionales</strong></dt>
+              <dd>
+                Servicios de gestión de prensa, manejo de crisis y asesoría estratégica frente a contingencias mediáticas.
+              </dd>
+            </div>
+<br>
+            <div class="service-item">
+                <dt><strong>Servicio de Suscripción</strong></dt>
+                <dd>
+                  Ofrecemos un servicio de suscripción que permite recibir informes de prensa <strong>diarios, semanales o mensuales</strong>, ajustados a las necesidades informativas de tu organización. Ideal para mantener un <strong>seguimiento continuo y actualizado</strong> de temas relevantes en medios de comunicación.
+                  <br>
+                  La suscripción incluye reportes en formato editable.
+                </dd>
+            </div>
+              
+          </dl>
+        </section>
+      </div>
+      
    
 
 
@@ -110,8 +143,21 @@
 
     <br>
     <br>
-    <footer>
-        <img src="piedepaginalogo.webp" alt="prensaclipp" height="200px" width="400px">
-    </footer>
+   <!-- Footer -->
+<footer style=" color: #eee; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
+    <!-- Left: Logo -->
+    <div style="display: flex; align-items: center;">
+      <img src="piedepaginalogo.webp" alt="Logo" style="height: 200px; margin-right: 15px;" />
+      
+   
+    </div>
+  
+    <!-- Right: Contact Info -->
+    <div style="text-align: right; font-size: 0.9rem; line-height: 1.5;">
+      <div>E-mail: <a href="mailto:reportefemedia@gmail.com" style="color: #eee; text-decoration: none;">Reportefemedia@gmail.com</a></div>
+      <div>Telefono: <a href="tel:+1234567890" style="color: #eee; text-decoration: none;">+569 689 8888</a></div>
+      <div>Santiago, Chile.</div>
+    </div>
+  </footer>
 
 </body>
