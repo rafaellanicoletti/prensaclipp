@@ -4,13 +4,89 @@ body{
 .navbar{
     height: auto;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
   
 }
+
+
+.nav-link.active {
+  color: #009acf;
+  font-weight: bold;
+  border-bottom: 4px solid #009acf;
+  display: inline-block;
+}
+
+
+
+.bg-image-section {
+  background-image: url('magazine.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Makes it stay still while you scroll */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ 
+  position: relative;
+}
+
+.bg-image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust darkness */
+  z-index: 0;
+}
+
+.bg-image-section .content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo-img {
+  max-height: 150px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    max-height: 50px;
+  }
+}
+
+
+
+
 
 .carousel {
   margin-top: 50px; /* Adjust as needed */
 }
+
 
 
 .responsive{
@@ -56,7 +132,7 @@ p{
 
 .btn{
     font-family: 'Raleway', sans-serif;
-    background-color: black;
+    background-color: #009acf;
     color: white;
     border-radius: 0;
 }
@@ -146,9 +222,11 @@ footer{
 
 
   .btn-custom {
-    background-color: #083262 !important;
+    background-color: #009acf !important;
     color: white !important;
     border: none !important;
+    padding: 16px !important;
+    border-radius: 8px !important;
 }
 
 .btn-custom:hover {
@@ -244,23 +322,8 @@ dd{
 }
 
 /* CTA button style */
-.analytics-cta {
-  margin-top: 20px;
-  background-color: #083262;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
-.analytics-cta:hover {
-  background-color: #061f45; /* slightly darker on hover */
-  color: white;
-  text-decoration: none;
-}
+
+
 
 #clientsID .carousel-inner img {
   max-height: 350px; /* adjust height as needed */
@@ -308,10 +371,12 @@ dd{
 
 
 /* HERO*/
-
+.section{
+  background-color: #edf1f8;
+}
 .hero {
-  padding: 4rem 1rem;
-  background-color: #f5f8fa 
+ 
+  background-color: #ffff 
 }
 
 .container {
@@ -341,7 +406,7 @@ dd{
 }
 
 .btn-primary {
-  background-color: #dbff6f;
+  background-color: #009acf;
   padding: 0.75rem 2rem;
   border-radius: 9999px;
   color: white;
@@ -352,7 +417,7 @@ dd{
 }
 
 .btn-primary:hover {
-  background-color: #5f4bd8;
+  background-color: #061f41;
 }
 
 .hero-image {
@@ -362,10 +427,12 @@ dd{
 
 .hero-image img {
   max-width: 100%;
+  
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1z);
 }
+
 
 /* Responsive: stack columns on small screens */
 @media (max-width: 768px) {
@@ -424,10 +491,11 @@ dd{
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000000;
-  border: 2px solid #000000;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #009acf;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -436,9 +504,11 @@ dd{
 }
 
 .hero-cta:hover {
-  background-color: #b0e8f4;
-  color: white;
-  border-color: #0056b3;
+  background-color: #083262
+  ;
+  color: rgb(255, 255, 255);
+  border-color: #083262;
+  ;
 }
 
 .cta-arrow {
@@ -497,9 +567,6 @@ dd{
 
 
 
-
-
-
 /* Footer */
 
 /* Footer wrapper */
@@ -520,7 +587,8 @@ dd{
   margin: 0 auto;
 }
 
-/* Logo sizing */
+/* 
+ sizing */
 .footer-logo img {
   height: 120px;
   max-width: 100%;

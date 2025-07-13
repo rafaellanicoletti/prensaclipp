@@ -33,13 +33,17 @@
 <body>
    
 <!-- Navbar -->
+
+
     
 <!-- Responsive Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <!-- Logo -->
   <a class="navbar-brand" href="index.html">
-    <img src="logo 2 .png" alt="Prensaclipp" class="img-fluid" style="max-height: 200px;">
+    <img src="logo 2 .png" alt="Prensaclipp" class="img-fluid logo-img">
   </a>
+
+ 
 
   <!-- Hamburger / Collapse Toggle -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -50,14 +54,14 @@
   <!-- Nav Links -->
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(actual)</span></a>
+          </li>
       <li class="nav-item">
         <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="servicios.html">Servicios<span class="sr-only">(actual)</span></a>
+        <a class="nav-link" href="servicios.html">Servicios</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="clientes.html">Clientes</a>
@@ -159,5 +163,18 @@
       <div>Santiago, Chile.</div>
     </div>
   </footer>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+  
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+          link.parentElement.classList.add("active"); // optional: highlight <li>
+        }
+      });
+    });
+  </script>
 </body>

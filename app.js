@@ -39,3 +39,5 @@ document.querySelectorAll('.navbar-nav a').forEach(function(navLink) {
   $('#carouselExampleControls').carousel({
     interval: 2000
   });
+
+

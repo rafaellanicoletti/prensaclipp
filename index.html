@@ -31,13 +31,17 @@
 <body>
  
 <!-- Navbar -->
+
+
     
 <!-- Responsive Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <!-- Logo -->
   <a class="navbar-brand" href="index.html">
-    <img src="logo 2 .png" alt="Prensaclipp" class="img-fluid" style="max-height: 150px;">
+    <img src="logo 2 .png" alt="Prensaclipp" class="img-fluid logo-img">
   </a>
+
+ 
 
   <!-- Hamburger / Collapse Toggle -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -48,9 +52,9 @@
   <!-- Nav Links -->
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(actual)</span></a>
-      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(actual)</span></a>
+          </li>
       <li class="nav-item">
         <a class="nav-link" href="quienessomos.html">Quiénes Somos</a>
       </li>
@@ -73,7 +77,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-image">
-        <img src="tablet.jpg" alt="Service Illustration" />
+        <img src="report.png" alt="Service Illustration"/>
       </div>
   
       <div class="hero-text">
@@ -83,7 +87,7 @@
           investigación, laboral, tecnología, medioambiente y salud.
         </p>
         <div class="hero-cta">
-          <span class="cta-text">Get Started</span>
+          <span class="cta-text">Quiero saber más</span>
           <span class="cta-arrow">→</span>
         </div>
   
@@ -106,26 +110,18 @@
   </section>
        <!-- END HERO 1 -->
 
-     
-
-
-
-
-
-   
-      
-   
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     
-
+    <section class="bg-image-section">
+        <div class="content">
     <div class="container my-5">
         <div class="row">
       
           <!-- Card 1 -->
           <div class="col-12 col-md-6 mb-5 px-3">
             <div class="card h-100">
-              <img src="" class="card-img-top" alt="Service 1">
+              <img src="reportes.png" class="card-img-top" alt="Service 1">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Servicios</h5>
                 <p class="card-text">Coordinamos tu presencia en medios para maximizar tu visibilidad e impacto público.</p>
@@ -137,7 +133,7 @@
           <!-- Card 2 -->
           <div class="col-12 col-md-6 mb-5 px-3">
             <div class="card h-100">
-              <img src="" class="card-img-top" alt="Service 2">
+              <img src="reportes.png" class="card-img-top" alt="Service 2">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Nuestros Clientes</h5>
                 <p class="card-text">Coordinamos tu presencia en medios para maximizar tu visibilidad e impacto público.</p>
@@ -149,24 +145,15 @@
         </div>
       </div>
       
-    
 
 
-
-
-
+    </div>
+</section>
 
 
   
+          <!-- Card 1 
 
-
-
-
-
-
-
-    <div class="containerGray">
-    <!-- Servicio container -->
         <div class="container" id='containerServicios' class='responsive'>
             <div class="row">
                 <div class="col columni">
@@ -178,7 +165,7 @@
                     <h2>Reportes de Prensa</h2>
                     <br>
                     <br>
-                    <a class="btn btn-primary btn-dark .active" href="servicios.html" role="button">Más Información</a>
+                    <a class="btn btn-primary btn-custom" href="servicios.html" role="button">Más Información</a>
                 </div>
                 </div>
 
@@ -190,7 +177,29 @@
                 </div>
             </div>
         </div>
-        
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -260,7 +269,7 @@
       </div>
     </div>
   </div>
-  
+
 
 <!--CONOCES CONTAINER   -->
 
@@ -292,8 +301,22 @@
 
 
 
-
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll(".nav-link");
+  
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+          link.parentElement.classList.add("active"); // optional: highlight <li>
+        }
+      });
+    });
+  </script>
+  
+  
 
 
 </body>
