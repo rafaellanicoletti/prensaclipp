@@ -50,7 +50,7 @@ body{
 
 
 .banner-section {
-  background-image: url('magazine.jpg');
+  background-image: url('newspaper.jpg');
   background-attachment: fixed; /* this is key for parallax */
   background-size: cover;
   background-position: center;
