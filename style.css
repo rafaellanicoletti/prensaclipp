@@ -19,7 +19,7 @@ body{
 
 
 .bg-image-section {
-  background-image: url('magazine.jpg');
+  background-image: url('tea.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Makes it stay still while you scroll */
@@ -49,7 +49,74 @@ body{
 
 
 
+.banner-section {
+  background-image: url('magazine.jpg');
+  background-attachment: fixed; /* this is key for parallax */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
 
+/* Optional dark overlay */
+.banner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust if too dark/light */
+  z-index: 0;
+}
+
+
+
+
+
+/* Optional: dark overlay for contrast */
+.banner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust for darkness */
+  z-index: 0;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #009acf;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 400;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #061f41;
+  text-decoration: none;
+  color: white;
+
+}
 
 
 
@@ -164,18 +231,19 @@ p{
 
 footer{
     background-color: #083262;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .footer {
     background-color: #083262;
     color: #eee;
-    padding: 20px 40px;
+    padding: 40px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, sans-serif;
     flex-wrap: wrap;
+    min-height: 200px; /* Optional: ensures a minimum height */
   }
 
   .footer-left {
@@ -452,20 +520,19 @@ dd{
 
 .analytics-panels {
   display: flex;
-  gap: 1.5rem;
-  margin-top: 3rem;
+  gap: 8px;
+  margin-top: 8px;
   flex-wrap: wrap;
   justify-content: start;
+ 
 }
 
 .panel {
   background: rgba(255, 255, 255, 0.15);
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
+  padding: 32px 8px;
   text-align: center;
   flex: 1 1 150px;
-  color: black;
-
+  color: #083262;
   transition: background-color 0.3s ease;
   cursor: default;
 }
@@ -474,6 +541,7 @@ dd{
   font-size: 2rem;
   margin-bottom: 0.3rem;
   font-weight: 700;
+  color: black;
 }
 
 .panel p {
@@ -573,7 +641,7 @@ dd{
 .site-footer {
   background-color: #083262;
   color: #eee;
-  padding: 20px 15px;
+  padding: 80px 40px;
   font-family: Arial, sans-serif;
 }
 
