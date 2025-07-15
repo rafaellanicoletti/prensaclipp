@@ -1,6 +1,112 @@
 body{
     background-color: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+
+/* Headings */
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+
+
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #009acf;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #007ba8;
+}
+
+/* Navbar */
 .navbar{
     height: auto;
     font-family: 'Open Sans', sans-serif;
@@ -109,6 +215,7 @@ body{
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  
 }
 
 .cta-button:hover {
@@ -167,35 +274,7 @@ body{
     right: 50px;
 }
 
-h1{
-    font-family: 'Anton', sans-serif;
-    font-size: 46px;
-}
 
-h2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    
-}
-
-h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    
-}
-
-h4{
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  
-}
-
-
-p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    
-}
 
 .btn{
     font-family: 'Raleway', sans-serif;
@@ -466,6 +545,9 @@ dd{
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  white-space: nowrap;
+  overflow: hidden;      /* optional: hides overflow text */
+  text-overflow: ellipsis; /* optional: shows "..." if text is too long */
 }
 
 .hero-text p {
@@ -559,17 +641,22 @@ dd{
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   color: #ffffff;
   background-color: #009acf;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+
+
+
+
 
 .hero-cta:hover {
   background-color: #083262
@@ -693,4 +780,78 @@ dd{
     height: 100px;
     margin-left: -30px;
   }
+}
+
+.ai-icons-section {
+  background-color: white !important;
+  position: relative;  /* Create stacking context */
+  overflow: hidden;
+  padding: 80px 20px 60px; /* adjust vertical spacing */
+  text-align: center;
+  color: #083262;
+}
+
+
+
+.ai-container {
+  position: relative;
+  z-index: 1;      /* above SVG */
+  max-width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ai-icons-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ai-description {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.ai-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.ai-item {
+  flex: 1 1 300px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.ai-item img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.ai-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.ai-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.background-graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ai-icons-section {
+  position: relative;
+  z-index: 1;
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
