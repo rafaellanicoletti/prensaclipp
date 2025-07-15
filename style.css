@@ -19,7 +19,7 @@ body{
 
 
 .bg-image-section {
-  background-image: url('tea.jpg');
+  background-image: url('news1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  /* Makes it stay still while you scroll */
@@ -237,7 +237,7 @@ footer{
 .footer {
     background-color: #083262;
     color: #eee;
-    padding: 40px 40px;
+    padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -667,6 +667,8 @@ dd{
   font-size: 0.9rem;
   line-height: 1.6;
   text-align: right;
+  padding-bottom: 0;
+  
 }
 
 .footer-contact a {
@@ -683,10 +685,12 @@ dd{
 
   .footer-contact {
     text-align: center;
-    margin-top: 15px;
+    margin-top: -15px;
+    
   }
 
   .footer-logo img {
     height: 100px;
+    margin-left: -30px;
   }
 }
