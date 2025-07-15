@@ -163,7 +163,6 @@ p {
   background-repeat: no-repeat;
   padding: 60px 20px;
   text-align: center;
-  color: white;
   position: relative;
 }
 
@@ -454,6 +453,7 @@ dd{
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+
 /* Text on cards */
 .analytics-card h3 {
   font-weight: 700;
@@ -519,7 +519,7 @@ dd{
 
 /* HERO*/
 .section{
-  background-color: #edf1f8;
+  background-color: #ffff;
 }
 .hero {
  
