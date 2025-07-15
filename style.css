@@ -535,7 +535,7 @@ dd{
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .hero-text {
@@ -543,9 +543,8 @@ dd{
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  white-space: nowrap;
+  
+  margin-bottom: 80px;
   overflow: hidden;      /* optional: hides overflow text */
   text-overflow: ellipsis; /* optional: shows "..." if text is too long */
 }
@@ -571,16 +570,16 @@ dd{
 }
 
 .hero-image {
-  flex: 2;
+  flex: 1 1 400px;
   text-align: center;
 }
 
+
 .hero-image img {
-  width: 100%;
-  max-width: 800px; /* try 800 or even remove to test */
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
-
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1z);
 }
 
 
