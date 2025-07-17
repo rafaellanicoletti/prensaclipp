@@ -1,5 +1,5 @@
 body{
-    background-color: #F2F2F2;
+    
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -404,12 +404,13 @@ footer{
 /* Quienes somos html */
 
 .container{
-    padding-top: 50px;
+    padding-top: 24px;
 }
 
 /* Servicios html */
 .servicioCont {
     font-family: 'Raleway', 'sans-serif';
+    padding: 16 16 16;
 }
 
 dt{
@@ -888,3 +889,45 @@ dd{
   height: 30px;
   filter: brightness(0) invert(1);
 }
+
+
+
+/* Spacing between cards (if not using Bootstrap spacing utilities) */
+.service-card {
+  margin-bottom: 16px;
+ 
+  
+}
+
+
+/* Icon styling */
+.icon-wrapper i {
+  font-size: 48px;
+  color: #009acf; /* Bootstrap primary color */
+  margin-bottom: 1rem;
+}
+
+.card-body{
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+
+}
+
+/*
+.card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+*/
+
+
+
+
