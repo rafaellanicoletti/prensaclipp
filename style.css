@@ -95,7 +95,7 @@ p {
   color: #ffffff;
   background-color: #009acf;
   padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  border-radius: 80px;
   cursor: pointer;
   user-select: none;
   border: none;
@@ -120,6 +120,7 @@ p {
   font-weight: bold;
   border-bottom: 4px solid #009acf;
   display: inline-block;
+  
 }
 
 
@@ -216,7 +217,7 @@ p {
   color: white;
   padding: 12px 24px;
   font-weight: 400;
-  border-radius: 8px;
+  border-radius: 80px;
   text-decoration: none;
   transition: background-color 0.3s ease;
   
@@ -230,6 +231,30 @@ p {
 
 }
 
+.review {
+  display: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.review.active {
+  display: block;
+  opacity: 1;
+  position: relative;
+}
+  
+#reviews-carousel {
+  position: relative;
+  min-height: 140px; /* adjust if needed */
+  margin-bottom: 20px;
+}
 
 
 
@@ -285,7 +310,7 @@ p {
     font-family: 'Raleway', sans-serif;
     background-color: #009acf;
     color: white;
-    border-radius: 0;
+    border-radius: 80px;
 }
 
 
@@ -564,7 +589,7 @@ dd{
 .btn-primary {
   background-color: #009acf;
   padding: 0.75rem 2rem;
-  border-radius: 9999px;
+  border-radius: 80px!important;
   color: white;
   font-weight: 600;
   text-decoration: none;
@@ -658,7 +683,7 @@ dd{
   color: #ffffff;
   background-color: #009acf;
   padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  border-radius: 80px;
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
@@ -924,15 +949,137 @@ dd{
   max-height: 200px;
   object-fit: contain;
   padding: 1rem;
+  display: block;
 
 }
 
-/*
+
 .card {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* ensures image doesn't overflow if scaled */
 }
-*/
 
 
 
 
+
+/*QUIENES SOMOS*/
+.about-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: visible;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+
+}
+
+/* Floating gradient box */
+.floating-overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px; /* Half outside the image */
+  background: linear-gradient(135deg, #8e1ac0, #df79c4, #f5c343);
+  color: white;
+  border-radius: 100px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Stats layout */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.stat p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.about-text {
+  padding: 120px 20px 60px; /* Extra top padding to clear the overlay */
+  background-color: #fff;
+  color: white;
+}
+
+.about-text .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  
+}
+
+.about-text h2,
+.about-text h3 {
+  color: #ffffff;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white!important;
+}
+
+
+.services-banner {
+  position: relative;
+  background-image: url('news1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  color: white;
+}
+
+
+
+.services-banner h1 {
+
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.services-banner p {
+
+  max-width: 900px;
+  margin: 0 auto 30px;
+  color: white;
+
+}
+
+.services-banner .btn-primary {
+  
+  
+  padding: 12px 24px;
+
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.services-banner .btn-primary:hover {
+  background-color: #061f41;
+  color: white;
+}
