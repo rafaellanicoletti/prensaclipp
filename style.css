@@ -551,7 +551,7 @@ dd{
 
 .hero-text h1 {
   
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   overflow: hidden;      /* optional: hides overflow text */
   text-overflow: ellipsis; /* optional: shows "..." if text is too long */
 }
@@ -577,16 +577,21 @@ dd{
 }
 
 .hero-image {
-  flex: 1 1 400px;
+  flex: 1 ;
   text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Optional: remove or adjust */
 }
 
 
 .hero-image img {
-  max-width: 100%;
+  max-width: 900px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1z);
+ 
 }
 
 
